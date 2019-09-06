@@ -12,7 +12,7 @@ const searchString = 'https://api.github.com/users/'; // ${someUserHere}/repos
 
 function gitApiCall(searchTerm){
     fetch('https://api.github.com/users/' + searchTerm + '/repos')
-    .then(response => response.Json)
+    .then(response => response.json())
     .then(responseJson => display(responseJson));
     // display(responseJson);
 }
